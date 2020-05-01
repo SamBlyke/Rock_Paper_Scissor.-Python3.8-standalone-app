@@ -1,4 +1,5 @@
 import random
+import time
 
 print("Welcome to the game of Rock-Paper-Scissor.")
 
@@ -8,7 +9,7 @@ Opt_full=["ROCK","PAPER","SCISSOR"]
 game_over_num=0
 u=None
 
-def dice():
+def game_logic():
     global game_over_num
     global u
     print("r --> ROCK")
@@ -53,23 +54,23 @@ def dice():
             break
         else:
             game_over_num=-1
-            print("your input was wrong")
-            break
+            print("Your input doesn't comply.")
 
-dice()
+game_logic()
 
 while True:
     if(game_over_num==1):
-        print("Computer won this time".upper())
+        print("                         Computer won this time".upper())
     elif(game_over_num==2):
-        print("User, You've won this time".upper())
+        print("                        User, You've won this time".upper())
     elif(game_over_num==-1):
-        print("EXITING")
+        print("                        EXITING")
+        time.sleep(0.5)
         break
     elif(u=="E"):
         break
     game_over_num=0
-    dice()
+    game_logic()
     
 
 
