@@ -26,7 +26,7 @@ def game_logic():
     
         if(user_choice == comp_choice):
             game_over_num=0
-            print("            ____ Same result bu both computer and the user. ____")
+            print("            ____ Same choice by both both computer and the user. ____")
             break
         elif(user_choice==Opt[0] and comp_choice==Opt[1]):
             print("            ____ Computer opted for %s while user opted for %s ____ " % (Opt_full[0] , Opt_full[1]))
