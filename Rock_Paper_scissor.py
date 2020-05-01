@@ -1,7 +1,7 @@
 import random
 import time
 
-print("Welcome to the game of Rock-Paper-Scissor.")
+print("                 Welcome to the game of Rock-Paper-Scissor.")
 
 Opt=["R","P","S"]
 Opt_full=["ROCK","PAPER","SCISSOR"]
